@@ -28,7 +28,9 @@ function App() {
     // this is a fragment tag it does not add a extra dom element and helps in aggregating multiple sibling componenets
     // as we use [] wrapped in place of fragment but in that case key is mandatory for each sibling componenet
     <>
-    <Search  searchTxt={searchTxt} searchHandler={searchHandler}/>
+    <Search  searchTxt={searchTxt} searchHandler={searchHandler}>
+      <strong>compostion value</strong>
+    </Search>
     <List list={filteredList}/>
     </>
   );

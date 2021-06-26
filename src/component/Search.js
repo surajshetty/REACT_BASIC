@@ -7,7 +7,7 @@ const Search = (props)=>{
    return (
        <div>
            <input type="text" value={props.searchTxt} onChange={searchHandler}/>
-           <label value={props.searchTxt}>{props.searchTxt}</label>
+           <label value={props.searchTxt}>{props.children}</label>
 
        </div>
    )
