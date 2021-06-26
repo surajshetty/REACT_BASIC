@@ -25,6 +25,8 @@ function App() {
   }
  
   return (
+    // this is a fragment tag it does not add a extra dom element and helps in aggregating multiple sibling componenets
+    // as we use [] wrapped in place of fragment but in that case key is mandatory for each sibling componenet
     <>
     <Search  searchTxt={searchTxt} searchHandler={searchHandler}/>
     <List list={filteredList}/>
